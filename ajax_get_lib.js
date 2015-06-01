@@ -1,5 +1,4 @@
 // Ajax client helper library, uses GET protocol
-// Code by Alan Riggins, CS545, Fall 2013
 
 
 function HttpRequest(sURL, fpCallback) {
