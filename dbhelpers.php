@@ -170,36 +170,5 @@ foreach($arr as $item) {
 
 
 
-/*
-//Funtion for generating child id and inserting child info into child table
-function sqlforcinsertion(){
-$program_id,$child_id;
-$program;
 
-//Generating child id
-$childidsql="SELECT MAX(id)FROM child;";
-$resultcid=mysqli_query($db,$childidsql);
-while($row = mysqli_fetch_array($resultcid))
-{
-    if($row==null)
-	 $child_id=1;
-	else
-	$child_id=trim($row[0])+1;
-}		
-
- $sql4= "INSERT INTO child(id,parent_id,relation,first_name,middle_name,last_name,nickname,image_filename,gender,birthdate,conditions,
- diet,emergency_name,emergency_phone) values('$child_id',1,'mother','john','s','smith','js','baby.jpg','M','11-11-1999','no','no','henry',7878999999);";
- do_insertion(sql4);
- 
- $sql6 = "SELECT id FROM program where description='$program';";
- $result4=mysqli_query($db,$sql6);
- while($row = mysqli_fetch_array($result4))
-		{
-			$program_id=trim($row[0]);
-		}
- $sql7="INSERT INTO enrollment(program_id,child_id) values('$program_id','$child_id');";
-$result5=mysqli_query($db,$sql7);
-
-}
-*/	
 ?>
