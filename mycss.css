@@ -1,0 +1,660 @@
+
+/* 
+            Rajagopal,Divya    Account:jadrn039
+            CS545, Fall 2014
+            Project #2
+      
+*/
+*{
+    margin:0;
+    padding: 0;
+}
+html,body
+{
+   
+    height:100%;
+    min-width: 900px;
+    
+}
+
+#firstbody{
+    
+  background-image: url("fabric_plaid.png");
+  
+}
+
+#secondbody{
+  background-color: #606066; 
+}
+
+
+@font-face{
+   font-family:"holla";
+   src:url("HollaScript.ttf");
+}
+
+@font-face{
+   font-family:"quicksand";
+   src:url("Quicksand Book.otf");
+}
+@font-face{
+   font-family:"quicksandl";
+   src:url("Quicksand Light.otf");
+}
+@font-face{
+   font-family:"quicksandb";
+   src:url("Quicksand Bold.otf");
+}
+
+.heading img{
+    
+    float:left;
+    padding-left:30px;
+    height:100%;
+    width:5%;
+}
+
+.heading p{
+    background-color: #606066;
+    font-family:quicksand;
+    font-size: 28px;
+    margin:0 auto 0 auto;
+    padding-top:30px;
+    text-align: left;
+    
+    color:white;
+    height:100%;
+}
+
+.heading ul{
+    float:right;
+    margin-right:40px;
+    padding-top: 80px;
+}
+
+.heading li{
+    display:inline;
+    font-family:quicksand;
+    padding:30px;
+    font-size: 16px;
+    color:white;
+}
+
+
+
+.subheading p{
+    font-family:quicksand;
+    font-size: 16px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-bottom:50px;
+    
+}
+
+.info{
+    margin:0 auto 0 auto;
+    font-family:"quicksand";
+    font-size: 20px;
+    
+    width:70%;
+    color:black;
+    text-align:center
+}
+.info .lar{
+    padding-top: 125px;
+    font-size:35px;
+     
+}
+.info .med{
+    padding-top: 20px;
+    font-size:20px;
+    
+}
+.info .sm{
+    padding-top: 10px;
+    font-size:15px;
+    
+}
+.button_b1{
+   text-align:center;
+   padding-top: 70px;
+    
+   
+}
+
+#b1{
+    
+    margin:0 auto 0 auto;
+    padding:10px 20px 10px 20px;
+    color:white;
+    border:2px solid #606066;
+    background-color: #606066;
+    font-family:"quicksandb";
+    font-size: 18px;
+    
+}
+
+
+#pgm{
+    padding-bottom: 50px;
+     
+}
+#pgm h2{
+ 
+    font-family:quicksand;
+    font-size:30px;
+    font-weight: 400;
+    margin:0 auto 0 auto;
+    padding-top:120px;
+    text-align: center;
+    color:black;
+    height:100%;   
+    
+}
+
+
+#pgm ul  {
+   float:left;
+    padding-top: 60px;
+  margin-left:65px;
+}
+
+#pgm li{
+    float:left;
+    display:inline;
+    text-align:center;
+    font-family:quicksand;
+    font-size: 15px;
+    padding:45px;
+    
+}
+
+.eli{
+    width:115px;
+    
+}
+.eli:hover{
+    color:#666699;
+}
+
+
+
+.intro{
+    padding-top:300px;
+    font-family:"quicksand";
+    font-size:20px;
+    margin:0 auto 0 auto;
+    width:70%; 
+    padding-bottom:50px;
+    
+}
+
+#clk{
+   
+    font-family:"quicksandb";
+    font-size:15px;
+    padding-left:450px;
+    text-align:center;
+    color:red;
+    
+}
+
+a{
+    text-decoration:none;
+}
+
+.heading a{
+    color:white;
+}
+
+#disclaim{
+    color:rgba(255,255,255,0.5);
+    background-color: #606066;
+    font-family:quicksand;
+    font-size: 16px;
+    padding:20px;
+    text-align:center;
+}
+#pgmsel{
+    width:75%;
+    min-width:900px;
+    height:auto;
+    border:2px solid white;
+    border-radius:25px;
+    margin:30px auto 0 auto;
+    background-image: url("fabric_plaid.png");
+}
+
+#pgmsel span{
+    display:block;
+    font-family:"quicksandb";
+    padding:20px;
+    text-align:center;
+    
+}
+
+fieldset {
+    width: 850px;
+    margin: 100px auto 50px auto;
+    border:1px groove;
+    padding:40px 20px 0 20px;
+    border-radius:10px;
+    
+    
+    
+    }
+    
+    legend,h4{
+        margin-left: 20px;
+     padding: 2px 10px 2px 10px;
+    border: 1px groove;
+    border-radius: 5px; 
+    font-family:"quicksandb";
+    }
+    
+    
+    
+    #parentlegend,#childlegend{
+        margin-top: 50px;
+        border:0px;
+    }
+    
+   
+    form{
+      font-family:"quicksand";
+      font-size:15px;
+      padding-top: 0;
+    }
+    
+        
+
+    option{
+        font-family:"quicksand";
+        font-size:12px;
+    }
+    #lab1{ 
+      
+      margin-left:60px;
+     
+    }
+    
+    
+    
+input,select {
+    border: 1px solid black;
+    margin: 5px;
+    text-align: left;
+   
+    }   
+input:focus,textarea:focus{
+   border-color:#3399FF;
+   
+    }    
+  
+  
+    table{
+        padding-top:50px;
+        text-align:center;
+        
+    }
+    table td{
+        padding:3px;
+        padding-bottom: 10px; 
+        
+      
+      }
+      
+    .firstele{
+        text-align:right;
+    }
+    .secele{
+        text-align:left;
+    }
+    .bottomspacing{
+        padding-bottom: 0;
+        padding-top:10px;
+    }
+    .extraspace{
+        
+        padding-bottom:20px;
+    }
+    
+    #img{
+        border:0;
+    }
+    
+    .buttons {
+     
+    padding:5px 10px 5px 10px;
+    color:white;
+    border:2px solid #606066;
+    background-color: #606066;
+    font-family:"quicksandb";
+    font-size: 15px;
+    }      
+    
+    .bdiv{
+        margin:0 auto 0 300px;
+		
+    }
+	
+    
+    #parenterror,#reqspace{
+        color:white;
+        font-family:"quicksand";
+        font-weight:600;
+        width:120px;
+        height:auto;
+        position:fixed;
+        left:0;
+        border:2px solid white;
+        border-left:0px;
+        border-radius:5px;
+        background-color:#E62E00;
+        padding: 10px;
+    }
+    
+    
+    #childerror{
+        padding-top:30px;
+        padding-bottom:20px;
+    }
+    
+    #parenterror
+    {
+      top:100px;  
+    }
+    
+    #reqspace
+    {
+      top:300px;  
+    }
+    
+    strong{
+        color:red;
+        font-weight:400;
+    }
+    
+    .errorspan{
+        text-align: center;
+    }
+    
+    #parenterror img,#reqspace img{
+        margin-left:40px;
+    }
+    
+    #submitbody{       
+        background-color: #606066;
+        font-family:"quicksand";   
+    }
+    
+    .centerbody {        
+     margin:0px auto 0 auto;
+     text-align:center;
+     color:black;
+     background-image: url("fabric_plaid.png");
+     padding-top:50px;
+    }
+    
+    .centerbody h5{
+    font-family:"quicksandb";
+    font-size: 16px;
+    }
+    .centerbody img{
+        padding-top: 20px;
+    }
+    
+    
+    #submission{
+       position:absolute;
+       top:200px;
+       left:300px;
+    }
+   
+    
+    
+    .radioa{
+        background-color:#FFD6CC;
+       border:1px solid red;
+       
+    }
+    li a:hover{
+       color:rgb(194, 194, 163);
+       transition-property: color;
+        transition-duration: 1s;
+    }
+    
+    .clickstyle{
+        opacity:0.10;
+    }
+    
+    .intro span{
+        color:#666699;
+        padding-left:300px;
+        font-family:"quicksandb";
+        font-size:15px;
+    }
+
+    
+#flip{
+   margin:50px auto 0 auto;
+   border:2px solid white;
+   width:500px;
+    }
+    
+ #panel,#flip
+{
+padding:5px;
+color:white;
+background-color:#666633;
+font-size:16px;
+}
+
+#panel
+{ 
+ width:100%;
+ padding-top:50px;
+ margin:0 auto 0 auto;
+ display:none;
+ height:auto;
+}
+
+
+.emp{
+    font-family:"quicksandb";
+    font-size:18px;
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:20px;
+}
+
+.titlealign{
+    text-align:left;
+}
+
+.leftside{
+    
+    width:40%;
+    text-align:left;
+    float:left;
+   line-height:2;
+   padding-left:20px;
+}
+
+.rightside{
+  
+   width:40%;
+    text-align:left;
+    margin-left:350px;
+   line-height:2;
+  
+}
+
+.hide{
+    visibility:hidden;
+}
+
+#photo{
+  padding: 10px 10px 10px 10px;
+  border: 1px solid gray; 
+  width:200px;
+  height:auto; 
+  margin-left:350px;
+}
+.clear{
+    clear:both;
+}
+#error{
+    color:red;
+}
+#todo{
+    text-align:left;
+    margin:50px auto 0 auto;
+    width:50%;
+    line-height: 2;
+    color:#660033;
+}
+#todo h3{
+    font-style:italic;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+#todo ul{
+    list-style-type:square;
+   
+}
+
+#status{
+width:65%;
+margin:50px auto 100px auto;
+font-size:25px;
+border:3px solid black;
+padding:50px;
+font-family:"quicksand";
+text-align:center;
+}
+#errorshow,#confirm{
+width:75%;
+font-size:20px;
+text-align:center;
+margin:20px auto 50px auto;
+color:red;
+font-family:"quicksand";
+}
+#confirm{
+color:green;
+}
+
+#loginbody,#rep1body,#rep2body{
+    background-color: #990000;
+   
+}
+
+#userlogin{
+    margin:50px auto 0 auto;
+    width:30%;
+    color:white;
+    line-height: 3;
+}
+
+ #logintable input,.press{
+   margin:15px;
+}
+
+#logintable input:focus,.press:focus{
+    background-color:#CCCC7A;
+}
+.press{
+    padding:10px 20px 10px 20px;
+    border:1px solid #FFFF99;
+    border-radius:5px;
+    font-family:"quicksand";
+}
+
+.left{
+    text-align:right;
+}
+.right{
+    text-align:left;
+}
+
+
+
+#loginbody .heading p,#rep1body .heading p,#rep2body .heading p{
+    background-color:black;
+}
+
+#loginstatus{
+position:absolute;
+top:160px;
+padding-left:15px;
+font-family:"quicksand";
+font-size:18px;
+color: #FFFF99;
+}
+.listing{
+margin:30px auto 0 auto;
+color: #FFFF99;
+font-family:"quicksand";
+text-align:center;
+}
+.listing h3{
+padding-bottom:100px;
+}
+.listing span{
+font-size:19px;
+
+}
+.jointable{
+margin:20px auto 70px auto;
+border:1px solid white;
+border-collapse:collapse;
+width:50%;
+color:white;
+}
+.jointable tr,.jointable th,.jointable td{
+border:1px solid white;
+border-collapse:collapse;
+padding:10px 5px 10px 5px;
+}
+
+.jointable td{
+text-align:left;
+background-color:#566B56;
+}
+
+.jointable th{
+background-color:#3E7676;
+}
+
+#loginbody  .joinbigwidth{
+width:80%;
+}
+
+.jointable img{
+width:200px;
+}
+
+
+
+
+    
+    
+   
+
+
+
+
+
+
+
+
+    
+    
+   
+
+
+
+
+
+
